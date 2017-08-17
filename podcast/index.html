@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Claramente no va a ir éste título-->
+    <title>TestingAR - La página</title>
+
+    <!--Agrego estilos (custom, fontawesome, y, bootstrap)-->
+    <link href="../styles/testingar.css" rel="stylesheet" type="text/css">
+    <link href="../styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../styles/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--Cierro los estilos-->
+
+    <!--Agrego fuentes de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!--Cierro las fuentes personalizadas-->
+
+</head>
+
+<body id="form-top" class="index">
+    <!--Barra de Navegación y Marca se agrupan en resoluciones móviles-->
+    <nav id="nav_bar" class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div id="brand_id" class="container">
+        <div id="scroll_id" class="navbar-header page-scroll">
+          <button id="navbar_button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse-testingar" aria-expanded="false">
+            <span class="sr-only">Navegación</span>
+            Menú
+            <i class="fa fa-bars"></i>
+          </button>
+                <a id="topformleft_msg" class="navbar-brand page-scroll" href="#form-top">TestingAR LIVE!</a>
+            </div>
+
+            <!--Acá van los elementos donde presentamos lo que hacemos, quiénes somos, etc-->
+            <div id="navbar-collapse-testingar" class="navbar-collapse collapse" aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#form-top"></a>
+                    </li>
+                    <li>
+                        <a href="../#eventos" class="page-scroll">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="../#equipo" class="page-scroll">Equipo</a>
+                    </li>
+                    <!--li>
+                        <a href="#misión" class="page-scroll">Misión</a>
+                    </li-->
+                    <li>
+                        <a href="../#historia" class="page-scroll">Historia</a>
+                    </li>
+                    <li>
+                        <a href="../#redessociales" class="page-scroll">Redes Sociales</a>
+                    </li>
+                    <li>
+                        <a href="../#podcast" class="page-scroll">Podcast</a>
+                    </li>
+                    <li>
+                        <a href="../#postulate" class="page-scroll">¡Postúlate!</a>
+                    </li>
+                </ul>
+            </div>
+            <!--cierro "navabr-collapse-testingar"-->
+        </div>
+        <!--cierro "container"-->
+    </nav>
+
+  
+    <!--Abro HISTORIA-->
+    <section id="podcast">
+        <div class="container">
+            <h1><a href="http://feeds.feedburner.com/SyntaxErrorAR"><i class="fa fa-rss fa"></i></a> Syntax Error Podcast</h1>
+           
+                
+            <div style="margin-top:20px" class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Episodio #01                        
+                    </h3>
+                </div>
+                <div class="panel-body">       
+                    <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337736922&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+
+                    <p style="margin-top:30px">Bienvenidos a <b>Syntax Error</b>! Un podcast de TestingARMeetup.</p> 
+                    <p>Este es nuestro primer episodio y estaremos hablando de: </p>
+                    <ul>
+                        <li>Quienes somos y que es Syntax Error.</li>
+                        <li>Feature Flags, estamos pensando en testing?</li>
+                        <li>Top 5 de los failures de software de las ultimas semanas</li>
+                        <li>Deben los Test Automation Engineer saber testear?</li>
+                    </ul>
+
+                    <p>Algunos links que estuvimos comentando durante el episodio:</p>
+                    <ul>
+                        <li><a href="https://martinfowler.com/articles/feature-toggles.html">Feature Toggles</a></li>
+                        <li><a href="http://qablog.practitest.com/wp-content/uploads/2017/03/State_of_testing_2017_final_report.pdf">State of testing 2017</a></li>
+                        <li><a href="https://www.itnews.com.au/news/marketo-suffers-major-outage-after-domain-renewal-fail-469460">Marketo outage</a></li>
+                        <li><a href="http://www.telegraph.co.uk/tv/2017/07/17/game-thrones-fans-suffer-predictable-woe-hbo-go-crashes-season/">HBO GO</a></li>    
+                    </ul>
+                    <small>
+                        <p>Queremos agradecer por haber hecho CC los siguientes audios utilizados en el podcast:</p>
+                        <p>Syntax Error - <a href="https://soundcloud.com/dreamscape_records/hello-world-syntax-error">Hello World</a> es nuestro tema de apertura del podcast, Gracias!!</a></p>
+                        <p>Gracias a nuestro <a href="http://soundbible.com/2008-0-9-Male-Vocalized.html">top 5</a></p>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <!--cierro "container"-->
+    </section>
+    <!--Cierro la "section" que va a contener a la HISTORIA-->
+
+    <!--Agrego JS's-->
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrapValidation.js" type="text/javascript"></script>
+    <script src="js/magicExtended.js" type="text/javascript"></script>
+    <script src="js/magic.js" type="text/javascript"></script>
+    <!--Cierro JS's-->
+
+
+</body>
+
+</html>
