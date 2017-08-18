@@ -36,7 +36,7 @@ const organizers = [{
     },    
     {
         fullName: 'Nicolás Arkhipenko',
-        job: 'Lead Software Test Engineer',
+        job: 'Software Test Engineer',
         city: 'Buenos Aires',
         country: 'Argentina',
         twitter: 'https://twitter.com/nicoarkhipenko',
