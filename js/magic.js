@@ -26,6 +26,15 @@ const organizers = [{
         img: 'imgs/esmite_ignacio.jpeg',
     },
     {
+        fullName: 'Alejandro Rodriguez',
+        job: 'Software Tester',
+        city: 'Buenos Aires',
+        country: 'Argentina',
+        twitter: 'https://twitter.com/TestingARMeetup',
+        linkedin: 'https://www.linkedin.com/in/alerodm/es',
+        img: 'imgs/rodriguez_alejandro.png',
+    },    
+    {
         fullName: 'Nicolás Arkhipenko',
         job: 'Lead Software Test Engineer',
         city: 'Buenos Aires',
@@ -43,14 +52,12 @@ const sociales = [{
 }];
 
 
-
-
-const organizadores = `
+const organizadores1 = `
 <div id="dynamic" class="row">
     <div class="col-lg-12 text-center">
     <h2 class="section-heading">EL EQUIPO</h2>
-    ${organizers.map(i => `
-     <div class="col-sm-3">
+    ${organizers.slice(0,3).map(i => `
+     <div style="margin-left:5em" class="col-sm-3">
         <div class="team-member text-center">
             <img class="img-responsive img-circle" src=${i.img}>
               <h4>${i.fullName}</h4>
@@ -65,6 +72,24 @@ const organizadores = `
       </div> <!--cierro "col-sm-3"-->
     `).join('')}`;
 
+const organizadores2 = `
+<div id="dynamic" class="row">
+    <div class="col-lg-12 text-center">
+    ${organizers.slice(3,6).map(i => `
+        <div style="margin-left:5em" class="col-sm-3">
+        <div class="team-member text-center">
+            <img class="img-responsive img-circle" src=${i.img}>
+                <h4>${i.fullName}</h4>
+                <p id="position" class="text-muted">${i.job}</p>
+                <ul class="list-inline social-buttons">
+                    <li><a target="_blank" href="${i.twitter}"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" href="${i.linkedin}"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+        </div> <!--cierro "team-member"-->
+        </div> <!--cierro "col-sm-3"-->
+    `).join('')}`;
 
 const redes = `
 <div id="dynamic" class="row text-center">
@@ -91,5 +116,6 @@ const redes = `
     </div><!--cierro "row"-->
     `).join('')}`;
 
-$("#equipo_datos").append(organizadores);//inserto el contenido de organizadores en el html por jQuery
+$("#equipo_datos").append(organizadores1);//inserto el contenido de organizadores en el html por jQuery
+$("#equipo_datos").append(organizadores2);//inserto el contenido de organizadores en el html por jQuery
 $("#social_datos").append(redes);//inserto el contenido de redes sociales en el html por jQuery
