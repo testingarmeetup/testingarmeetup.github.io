@@ -44,6 +44,15 @@ const organizers = [[{
         img: 'imgs/arkhipenko_nicolas.jpeg',
     },
     {
+        fullName: 'Walter Lijo',
+        job: 'QA Automation Engineer',
+        city: 'Buenos Aires',
+        country: 'Argentina',
+        twitter: 'https://twitter.com/wlijo',
+        linkedin: 'https://www.linkedin.com/in/wlijo/',
+        img: 'imgs/lijo_walter.png',
+    }],
+    [{
         fullName: 'Alejandro Rodriguez',
         job: 'Software Tester',
         city: 'Buenos Aires',
