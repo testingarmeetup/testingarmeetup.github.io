@@ -1,4 +1,4 @@
-const organizers = [{
+const organizers = [[{
         fullName: 'Andres Curcio',
         job: 'Software Tester',
         city: 'Buenos Aires',
@@ -24,6 +24,24 @@ const organizers = [{
         twitter: 'https://twitter.com/nachoesmite',
         linkedin: 'https://ar.linkedin.com/in/iesmite/es',
         img: 'imgs/esmite_ignacio.jpeg',
+    }],[
+    {
+        fullName: 'Rodrigo Martin',
+        job: 'System Reliabilty Engineer',
+        city: 'Buenos Aires',
+        country: 'Argentina',
+        twitter: 'https://twitter.com/adidas_pump',
+        linkedin: 'http://linkedin.com/in/martinrodrigo',
+        img: 'imgs/martin_rodrigo.jpg',
+    },
+    {
+        fullName: 'Nicolás Arkhipenko',
+        job: 'Software Test Engineer',
+        city: 'Buenos Aires',
+        country: 'Argentina',
+        twitter: 'https://twitter.com/nicoarkhipenko',
+        linkedin: 'https://ar.linkedin.com/in/nicolás-arkhipenko-b2302425',
+        img: 'imgs/arkhipenko_nicolas.jpeg',
     },
     {
         fullName: 'Alejandro Rodriguez',
@@ -33,16 +51,7 @@ const organizers = [{
         twitter: 'https://twitter.com/TestingARMeetup',
         linkedin: 'https://www.linkedin.com/in/alerodm/es',
         img: 'imgs/rodriguez_alejandro.png',
-    },    
-    {
-        fullName: 'Nicolás Arkhipenko',
-        job: 'Software Test Engineer',
-        city: 'Buenos Aires',
-        country: 'Argentina',
-        twitter: 'https://twitter.com/nicoarkhipenko',
-        linkedin: 'https://ar.linkedin.com/in/nicolás-arkhipenko-b2302425',
-        img: 'imgs/arkhipenko_nicolas.jpeg',
-    }
+    }]
 ];
 
 
@@ -52,44 +61,40 @@ const sociales = [{
 }];
 
 
-const organizadores1 = `
-<div id="dynamic" class="row">
+const getOrganizerHtml = (organizer) => {
+    return `
+        <div style="margin-left:5em" class="col-sm-3">
+            <div class="team-member text-center">
+                <img class="img-responsive img-circle" src=${organizer.img}>
+                <h4>${organizer.fullName}</h4>
+                <p id="position" class="text-muted">${organizer.job}</p>
+                <ul class="list-inline social-buttons">
+                    <li><a target="_blank" href="${organizer.twitter}"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" href="${organizer.linkedin}"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div> <!--cierro "team-member"-->
+        </div> 
+    `;
+}
+
+let organizersHtml = organizers.map((organizersRow) => {
+    return `
+    <div id="dynamic" class="row">
+        <div class="col-lg-12 text-center">
+        ${organizersRow.map(i =>  getOrganizerHtml(i)).join('')}
+        </div>
+    </div>`
+}).join('');
+
+organizersHtml = `
     <div class="col-lg-12 text-center">
     <h2 class="section-heading">EL EQUIPO</h2>
-    ${organizers.slice(0,3).map(i => `
-     <div style="margin-left:5em" class="col-sm-3">
-        <div class="team-member text-center">
-            <img class="img-responsive img-circle" src=${i.img}>
-              <h4>${i.fullName}</h4>
-              <p id="position" class="text-muted">${i.job}</p>
-                <ul class="list-inline social-buttons">
-                    <li><a target="_blank" href="${i.twitter}"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a target="_blank" href="${i.linkedin}"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-        </div> <!--cierro "team-member"-->
-      </div> <!--cierro "col-sm-3"-->
-    `).join('')}`;
+    </div>
+    ${organizersHtml}
+    `;
 
-const organizadores2 = `
-<div id="dynamic" class="row">
-    <div class="col-lg-12 text-center">
-    ${organizers.slice(3,6).map(i => `
-        <div style="margin-left:5em" class="col-sm-3">
-        <div class="team-member text-center">
-            <img class="img-responsive img-circle" src=${i.img}>
-                <h4>${i.fullName}</h4>
-                <p id="position" class="text-muted">${i.job}</p>
-                <ul class="list-inline social-buttons">
-                    <li><a target="_blank" href="${i.twitter}"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a target="_blank" href="${i.linkedin}"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-        </div> <!--cierro "team-member"-->
-        </div> <!--cierro "col-sm-3"-->
-    `).join('')}`;
 
 const redes = `
 <div id="dynamic" class="row text-center">
@@ -116,6 +121,5 @@ const redes = `
     </div><!--cierro "row"-->
     `).join('')}`;
 
-$("#equipo_datos").append(organizadores1);//inserto el contenido de organizadores en el html por jQuery
-$("#equipo_datos").append(organizadores2);//inserto el contenido de organizadores en el html por jQuery
+$("#equipo_datos").append(organizersHtml);
 $("#social_datos").append(redes);//inserto el contenido de redes sociales en el html por jQuery
