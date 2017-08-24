@@ -65,7 +65,7 @@ const organizers = [[{
 
 
 const sociales = [{
-    twitter: 'https://twitter.com/aquintian',
+    twitter: 'https://twitter.com/testingarmeetup',
     slack: 'https://webtask.it.auth0.com/api/run/wt-iesmite-gmail_com-0/testingar-signup',
 }];
 
