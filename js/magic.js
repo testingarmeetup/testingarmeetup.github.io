@@ -27,7 +27,7 @@ const organizers = [[{
     }],[
     {
         fullName: 'Rodrigo Martin',
-        job: 'System Reliabilty Engineer',
+        job: 'Software Engineer',
         city: 'Buenos Aires',
         country: 'Argentina',
         twitter: 'https://twitter.com/adidas_pump',
