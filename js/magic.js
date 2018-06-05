@@ -66,7 +66,7 @@ const organizers = [[{
 
 const sociales = [{
     twitter: 'https://twitter.com/TestingARMeetup',
-    slack: 'https://webtask.it.auth0.com/api/run/wt-iesmite-gmail_com-0/testingar-signup',
+    slack: 'https://wt-iesmite-gmail_com-0.sandbox.auth0-extend.com/testingar-signup',
 }];
 
 
