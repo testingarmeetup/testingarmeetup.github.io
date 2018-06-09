@@ -66,7 +66,7 @@ const organizers = [[{
 
 const sociales = [{
     twitter: 'https://twitter.com/TestingARMeetup',
-    slack: 'https://testingar-rsbyleamij.now.sh'
+    slack: 'https://testingar.now.sh'
 }];
 
 
