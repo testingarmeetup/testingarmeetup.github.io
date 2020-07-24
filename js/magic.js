@@ -35,30 +35,12 @@ const organizers = [[{
         img: 'imgs/martin_rodrigo.jpg',
     },
     {
-        fullName: 'Nicolás Arkhipenko',
-        job: 'Software Test Engineer',
-        city: 'Buenos Aires',
-        country: 'Argentina',
-        twitter: 'https://twitter.com/nicoarkhipenko',
-        linkedin: 'https://ar.linkedin.com/in/nicolás-arkhipenko-b2302425',
-        img: 'imgs/arkhipenko_nicolas.jpeg',
-    },
-    {
-        fullName: 'Walter Lijo',
-        job: 'QA Automation Engineer',
-        city: 'Buenos Aires',
-        country: 'Argentina',
-        twitter: 'https://twitter.com/wlijo',
-        linkedin: 'https://www.linkedin.com/in/wlijo/',
-        img: 'imgs/lijo_walter.png',
-    }],
-    [{
         fullName: 'Alejandro Rodriguez',
-        job: 'Software Tester',
+        job: 'Software Engineer in Test',
         city: 'Buenos Aires',
         country: 'Argentina',
         twitter: 'https://twitter.com/TestingARMeetup',
-        linkedin: 'https://www.linkedin.com/in/alerodm/es',
+        linkedin: '',
         img: 'imgs/rodriguez_alejandro.png',
     }]
 ];
