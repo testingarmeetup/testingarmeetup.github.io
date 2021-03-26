@@ -48,7 +48,7 @@ const organizers = [[{
 
 const sociales = [{
     twitter: 'https://twitter.com/TestingARMeetup',
-    slack: 'https://testingar-slack.vercel.app/'
+    slack: 'https://testingar-slack.vercel.app'
 }];
 
 
