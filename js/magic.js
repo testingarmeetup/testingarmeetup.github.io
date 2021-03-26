@@ -36,9 +36,11 @@ const organizers = [[{
     },
     {
         fullName: 'Alejandro Rodriguez',
-        job: 'Software Tester',
+        job: 'Software Engineer in Test',
         city: 'Buenos Aires',
         country: 'Argentina',
+        twitter: '',
+        linkedin: '',
         img: 'imgs/rodriguez_alejandro.png',
     }]
 ];
