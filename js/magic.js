@@ -39,7 +39,7 @@ const organizers = [[{
         job: 'Software Engineer in Test',
         city: 'Buenos Aires',
         country: 'Argentina',
-        twitter: 'https://twitter.com/TestingARMeetup',
+        twitter: '',
         linkedin: '',
         img: 'imgs/rodriguez_alejandro.png',
     }]
@@ -48,7 +48,7 @@ const organizers = [[{
 
 const sociales = [{
     twitter: 'https://twitter.com/TestingARMeetup',
-    slack: 'https://testingar.now.sh'
+    slack: 'https://testingar-slack.vercel.app/'
 }];
 
 
